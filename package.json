@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/index.js",
+    "seed": "node src/seed.js"
   },
   "repository": {
     "type": "git",
@@ -17,9 +19,21 @@
   },
   "homepage": "https://github.com/Roman-Isko/nodejs-hw-mongodb#readme",
   "description": "",
+  "devDependencies": {
+    "@eslint/js": "^9.38.0",
+    "eslint": "^9.38.0",
+    "globals": "^16.4.0",
+    "nodemon": "^3.1.10"
+  },
   "dependencies": {
+    "cors": "^2.8.5",
     "dotenv": "^17.2.3",
     "express": "^5.1.0",
-    "mongoose": "^8.19.2"
+    "mongodb": "^6.20.0",
+    "mongoose": "^8.19.2",
+    "pino": "^10.1.0",
+    "pino-http": "^11.0.0",
+    "pino-pretty": "^13.1.2",
+    "prettier": "^3.6.2"
   }
 }
